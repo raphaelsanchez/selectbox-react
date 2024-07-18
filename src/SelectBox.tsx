@@ -9,7 +9,7 @@ import React, {
 
 type Option = {
   name: string;
-  value: string;
+  value?: string;
 };
 
 interface SelectBoxProps {
@@ -228,9 +228,11 @@ const SelectBox: React.FC<SelectBoxProps> = React.memo(
                     )}
                     <span className="flex items-center gap-1">
                       {option.name}{" "}
-                      <small className="text-xxs text-slate-400">
-                        ({option.value})
-                      </small>
+                      {option.value && (
+                        <small className="text-xxs text-slate-400">
+                          ({option.value})
+                        </small>
+                      )}
                     </span>
                   </li>
                 ))
