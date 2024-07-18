@@ -212,7 +212,7 @@ const SelectBox: React.FC<SelectBoxProps> = React.memo(
               {filteredOptions.length > 0 ? (
                 filteredOptions.map((option, index) => (
                   <li
-                    key={option.value}
+                    key={option.value ? option.value : option.name}
                     ref={(el) => (optionRefs.current[index] = el)}
                     id={`${name}-option-${option.value}`}
                     role="option"
