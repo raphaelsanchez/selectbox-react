@@ -228,11 +228,11 @@ const SelectBox: React.FC<SelectBoxProps> = React.memo(
                     )}
                     <span className="flex items-center gap-1">
                       {option.name}{" "}
-                      {option.value && (
+                      {option.value ? (
                         <small className="text-xxs text-slate-400">
                           ({option.value})
                         </small>
-                      )}
+                      ) : null}
                     </span>
                   </li>
                 ))

@@ -1,7 +1,7 @@
 {
     "name": "@raphysan/selectbox-react",
     "type": "module",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "A React select component with a search filter",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
