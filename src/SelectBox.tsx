@@ -212,9 +212,11 @@ const SelectBox: React.FC<SelectBoxProps> = React.memo(
               {filteredOptions.length > 0 ? (
                 filteredOptions.map((option, index) => (
                   <li
-                    key={option.value ? option.value : option.name}
+                    key={index}
                     ref={(el) => (optionRefs.current[index] = el)}
-                    id={`${name}-option-${option.value}`}
+                    id={`${name}-${option.name
+                      .toLowerCase()
+                      .replace(/[\s\W]+/g, "")}`}
                     role="option"
                     aria-selected={selectedOption === option.name}
                     className="relative flex cursor-pointer items-center rounded p-2 ps-8 text-sm outline-none hover:bg-slate-100 focus:bg-slate-100"
@@ -253,8 +255,8 @@ const SelectBox: React.FC<SelectBoxProps> = React.memo(
           onChange={(e) => handleSelectOption(e.target.value)}
           style={{ display: "none" }}
         >
-          {options.map((option) => (
-            <option key={option.value} value={option.value}>
+          {options.map((option, index) => (
+            <option key={index} value={option.value}>
               {option.name}
             </option>
           ))}
