@@ -1,11 +1,24 @@
 {
     "name": "@raphysan/selectbox-react",
     "type": "module",
-    "version": "0.1.0",
+    "version": "0.1.5",
     "description": "A React select component with a search filter",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:raphaelsanchez/selectbox-react.git"
+    },
+    "homepage": "https://github.com/raphaelsanchez/selectbox-react#readme",
+    "keywords": [
+        "react",
+        "typescript",
+        "select",
+        "filter",
+        "search",
+        "component"
+    ],
     "files": [
         "dist"
     ],
