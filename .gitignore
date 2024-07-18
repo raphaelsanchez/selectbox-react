@@ -1,0 +1,29 @@
+# Dependencies
+/node_modules
+
+# Build output
+/build
+/dist
+/lib
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+/.vscode
+/.idea
+
+# Logs
+/logs
+/*.log
+
+# Testing artifacts
+/coverage
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+{
+  "name": "@raphysan/selectbox-react",
+  "version": "0.1.0",
+  "description": "A React select component with a search filter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raphael Sanchez",
+  "license": "MIT"
+}
